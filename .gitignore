@@ -110,3 +110,21 @@ ENV/
 # Floydhub Files
 .floydexpt
 .floydignore
+
+*.png
+
+data/
+
+runs/
+
+tf_data/VGAN/MNIST/dataset/MNIST/processed/
+
+torch_data/DCGAN/MNIST/dataset/MNIST/processed/
+
+torch_data/DCGAN/MNIST/dataset/MNIST/raw/
+
+torch_data/VGAN/MNIST/dataset/MNIST/raw/
+
+torch_data/VGAN/MNIST/dataset/MNIST/processed/
+
+tf_data/VGAN/MNIST/dataset/MNIST/raw/
