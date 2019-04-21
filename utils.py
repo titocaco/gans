@@ -110,6 +110,11 @@ class Logger:
              )
         print('Discriminator Loss: {:.4f}, Generator Loss: {:.4f}'.format(d_error, g_error))
         print('D(x): {:.4f}, D(G(z)): {:.4f}'.format(d_pred_real.mean(), d_pred_fake.mean()))
+        
+        del d_error
+        del g_error
+        del d_pred_real
+        del d_pred_fake
 
     def save_models(self, generator, discriminator, epoch):
         out_dir = './data/models/{}'.format(self.data_subdir)
